@@ -11,8 +11,9 @@ import {
   View,
 } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
+// https://docs.amplify.aws/gen1/javascript/tools/libraries/configure-categories/
 Amplify.configure({
   Auth: {
     Cognito: {
@@ -166,7 +167,7 @@ const Auth = ({ children }: { children: React.ReactNode }) => {
         components={components}
         formFields={formFields}
       >
-        {() => <> {children}</>}
+        {() => <>{children}</>}
       </Authenticator>
     </div>
   );

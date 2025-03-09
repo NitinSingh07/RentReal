@@ -47,6 +47,7 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
           { icon: Home, label: "Residences", href: "/tenants/residences" },
           { icon: Settings, label: "Settings", href: "/tenants/settings" },
         ];
+
   return (
     <Sidebar
       collapsible="icon"
